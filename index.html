@@ -13,7 +13,9 @@
 
 <body>
 
-    <!-- /////////////////// DEKSTOP NAV /////////////////// -->
+    <!-- /////////////////// NAVIGATION /////////////////// -->
+
+    <!-- DEKSTOP NAV -->
     <nav id="desktop-nav">
         <div class="logo" style="cursor: pointer;">Ugurkan Karaca</div>
         <div>
@@ -26,7 +28,7 @@
         </div>
     </nav>
 
-    <!-- /////////////////// MOBILE NAV /////////////////// -->
+    <!-- MOBILE NAV -->
     <nav id="hamburger-nav">
         <div class="logo">Ugurkan Karaca</div>
         <div class="hamburger-menu">
@@ -43,83 +45,31 @@
             </div>
         </div>
     </nav>
-
-    <script src="script.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <div class="container-fluid"> -->
-    <!-- /////////////// INTRO SECTION /////////////// -->
-    <!-- <section id="intro-section">
-            <div class="container-fluid text-center">
-                <div class="col-md-6 d-flex align-items-center frame">
-                    <img src="media/me.jpg" alt="Profile Picture" class="img-fluid">
-                </div>
-
-                <div class="col-md-6">
-                    <h1>Hello~</h1>
-                    <h1>I am Ugur, a fullstack developer!</h1>
-                </div>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/me.jpg" alt="John Doe profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Ugurkan Karaca</h1>
+            <p class="section__text__p2">FULLSTACK Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Ugurkan-Karaca-CV-2024.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact Info
+                </button>
             </div>
-        </section> -->
-
-
-    <!-- /////////////// ABOUT SECTION /////////////// -->
-    <!-- <section id="about-section">
-
-        </section> -->
-
-
-    <!-- /////////////// PROJECTS SECTION /////////////// -->
-    <!-- <section id="projects-section">
-
-        </section> -->
-
-
-    <!-- /////////////// CONTACT SECTION /////////////// -->
-    <!-- <section id="contact-section">
-
-        </section>
-    </div> -->
-    <!-- <script src="script.js"></script> -->
-
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="window.open('https://www.linkedin.com/in/ugurkan-karaca/', '_blank');" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="window.open('https://github.com/UgurUgurUgur/', '_blank');" />
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
