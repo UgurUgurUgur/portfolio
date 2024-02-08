@@ -129,6 +129,7 @@ logo:hover {
     text-align: center;
     font-size: 1.5rem;
     color: black;
+    background-color: rgb(187, 223, 223);
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
@@ -226,11 +227,25 @@ section {
     gap: 1rem;
 }
 
+.frame {
+    --s: 5px;
+    padding: var(--s);
+    border: calc(2*var(--s)) solid #0000;
+    outline: 1px solid #000;
+    outline-offset: calc(-1*var(--s));
+    background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+}
+
 
 /* //////////////////// ICONS //////////////////// */
 .icon {
     cursor: pointer;
     height: 2rem;
+    transition: scale 0.2s ease-in-out;
+}
+
+.icon:hover {
+    scale: 1.1;
 }
 
 
@@ -316,11 +331,12 @@ section {
 .btn-color-1,
 .btn-color-2:hover {
     background: rgb(53, 53, 53);
-    color: white !important;
+    color: white;
 }
 
 .btn-color-1:hover {
-    background: rgb(0, 0, 0);
+    background: black;
+    color: white;
 }
 
 .btn-color-2 {
@@ -337,77 +353,42 @@ section {
 
 
 /* ////////////////// EXPERIENCE SECTION ////////////////// */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.frame {
-    --s: 5px;
-    padding: var(--s);
-    border: calc(2*var(--s)) solid #0000;
-    outline: 1px solid #000;
-    outline-offset: calc(-1*var(--s));
-    background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
-   width: 350px;
+#experience {
+    position: relative;
 }
 
-.welcome {
-    margin: 10px;
-    text-align: left !important;
-    font-weight: 800 !important;
-    font-size: 50px;
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
 }
 
 
-body {
-    margin: 10px;
-    display: grid;
-    background:rgb(254, 155, 119);
-    font-family: 'Instrument Sans';
-} */
+/* ////////////////// PROJECTS SECTION ////////////////// */
