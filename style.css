@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Instrument+Sans&display=swap');
+
+.frame {
+    --s: 5px;
+    padding: var(--s);
+    border: calc(2*var(--s)) solid #0000;
+    outline: 1px solid #000;
+    outline-offset: calc(-1*var(--s));
+    background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+   width: 350px;
+}
+
+.welcome {
+    margin: 10px;
+    text-align: left !important;
+    font-weight: 800 !important;
+    font-size: 50px;
+}
+
+
+body {
+    margin: 10px;
+    display: grid;
+    background:rgb(254, 155, 119);
+    font-family: 'Instrument Sans';
+}
