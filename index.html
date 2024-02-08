@@ -8,12 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
 
-    <nav id="dekstop-nav">
-        <div class="logo">Ugurkan Karaca</div>
+    <!-- /////////////////// DEKSTOP NAV /////////////////// -->
+    <nav id="desktop-nav">
+        <div class="logo" style="cursor: pointer;">Ugurkan Karaca</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -24,8 +26,25 @@
         </div>
     </nav>
 
+    <!-- /////////////////// MOBILE NAV /////////////////// -->
+    <nav id="hamburger-nav">
+        <div class="logo">Ugurkan Karaca</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
 
-
+    <script src="script.js"></script>
 
 
 
@@ -67,8 +86,8 @@
 
 
     <!-- <div class="container-fluid"> -->
-        <!-- /////////////// INTRO SECTION /////////////// -->
-        <!-- <section id="intro-section">
+    <!-- /////////////// INTRO SECTION /////////////// -->
+    <!-- <section id="intro-section">
             <div class="container-fluid text-center">
                 <div class="col-md-6 d-flex align-items-center frame">
                     <img src="media/me.jpg" alt="Profile Picture" class="img-fluid">
@@ -82,20 +101,20 @@
         </section> -->
 
 
-        <!-- /////////////// ABOUT SECTION /////////////// -->
-        <!-- <section id="about-section">
+    <!-- /////////////// ABOUT SECTION /////////////// -->
+    <!-- <section id="about-section">
 
         </section> -->
 
 
-        <!-- /////////////// PROJECTS SECTION /////////////// -->
-        <!-- <section id="projects-section">
+    <!-- /////////////// PROJECTS SECTION /////////////// -->
+    <!-- <section id="projects-section">
 
         </section> -->
 
 
-        <!-- /////////////// CONTACT SECTION /////////////// -->
-        <!-- <section id="contact-section">
+    <!-- /////////////// CONTACT SECTION /////////////// -->
+    <!-- <section id="contact-section">
 
         </section>
     </div> -->
