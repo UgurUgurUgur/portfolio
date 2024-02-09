@@ -4,3 +4,5 @@ function toggleMenu() {
     menu.classList.toggle('open');
     icon.classList.toggle('open');
 }
+
+document.getElementById("copyright").innerHTML = "Copyright &copy; " + new Date().getFullYear() + " Ugurkan Karaca. All Rights Reserved.";
